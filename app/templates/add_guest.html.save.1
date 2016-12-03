@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %} Add Guest {% endblock %}
+
+{% block body %}
+    <form method="POST">
+	<p>{{ form.name.label }} {{ form.name }}</p>
+	
+    </form>
+{% endblock %}
+<p>{{ form.name.label }} {{ form.name }}</p>
+

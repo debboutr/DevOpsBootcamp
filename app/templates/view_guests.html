@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %} View Guests {% endblock %}
+
+{% block body %}
+    <table>
+        <thead>
+            <th> Guest ID </th>
+            <th> Guest Name </th>
+            <th> Guest Message </th>
+        </thead>
+
+        <tbody>
+            {% for guest in guests %}
+	     	<tr>
+		    <td>{{ guest.id }}</td>
+		    <td>{{ guest.name }}</td>
+		    <td>{{ guest.message }}</td>
+		</tr>
+            {% endfor %}
+	</tbody>
+    </table>
+{% endblock %}
